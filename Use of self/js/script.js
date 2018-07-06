@@ -13,10 +13,15 @@ Button.prototype = {
 		this.element.innerText = this.text;
 		this.element.addEventListener('click', function() {
 			alert(self.text);
-		document.body.appendChild(this.element);
+		
 		});
+		
+		document.body.appendChild(this.element);
+	
 	}
 }
+
+
 
 var btn1 = new Button('Hello!');
 btn1.create();
